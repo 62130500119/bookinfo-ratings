@@ -36,3 +36,4 @@ jobs:
           src: ghcr.io/62130500119/bookinfo-ratings:uat
           dst: |
             ghcr.io/62130500119/bookinfo-ratings:${{needs.git-tag.outputs.tag-version}}
+            
