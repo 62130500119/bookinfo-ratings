@@ -11,5 +11,5 @@ jobs:
       ENV_NAME: $( [ "$GITHUB_REF" == "refs/heads/master" ]
     steps:
       - name: Set env 
-        run: echo "${{ env.ENV_NAME }} && echo 'uat' || echo ${GITHUB_REF##*/} )" >> $GITHUB_ENV
+        run: echo "ENV_NAME=${{ env.ENV_NAME }} && echo 'uat' || echo ${GITHUB_REF##*/} )" >> $GITHUB_ENV
       
